@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,600;0,700;0,800;1,300&display=swap");
 /* line 1, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/base/_reset.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -441,6 +442,159 @@ template {
 html {
   scroll-behavior: smooth;
   font-size: 62.5%;
+}
+
+/* line 10, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/base/_base.sass */
+.container {
+  max-width: 116rem;
+  margin: 0 auto;
+}
+
+/* line 1, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/base/_typography.sass */
+body {
+  font-family: 'Mulish', sans-serif;
+  font-weight: 600;
+  font-size: 1.8rem;
+  color: #6D7D8B;
+  line-height: 2.9rem;
+}
+
+/* line 9, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/base/_typography.sass */
+.left-wrapper__title {
+  color: #4A4A49;
+  font-size: 4.8rem;
+  font-weight: 800;
+  line-height: 6rem;
+  margin-bottom: 1.5rem;
+}
+
+/* line 15, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/base/_typography.sass */
+.left-wrapper__text {
+  margin-bottom: 4rem;
+}
+
+/* line 1, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/base/_utilities.sass */
+.text-align-center {
+  text-align: center;
+}
+
+/* line 4, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/base/_utilities.sass */
+.margin-bottom-15px {
+  margin-bottom: 1.5rem;
+}
+
+/* line 7, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/base/_utilities.sass */
+.margin-bottom-30px {
+  margin-bottom: 3rem;
+}
+
+/* line 10, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/base/_utilities.sass */
+.margin-bottom-40px {
+  margin-bottom: 4rem;
+}
+
+/* line 13, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/base/_utilities.sass */
+.margin-bottom-60px {
+  margin-bottom: 6rem;
+}
+
+/* line 16, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/base/_utilities.sass */
+.margin-bottom-80px {
+  margin-bottom: 8rem;
+}
+
+/* line 1, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/components/_buttons.sass */
+.btn {
+  padding: 1rem 3rem;
+  color: #FFFFFF;
+  background-color: #C55E6F;
+  text-decoration: none;
+  border-radius: .4rem;
+  transition: .3s all;
+  display: inline-block;
+}
+
+/* line 9, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/components/_buttons.sass */
+.btn:hover {
+  filter: brightness(110%);
+  transform: translateY(-0.1rem);
+}
+
+/* line 12, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/components/_buttons.sass */
+.btn_secondary {
+  padding: .5rem 4rem;
+  color: #C55E6F;
+  background-color: transparent;
+  border: 2px solid #C55E6F;
+}
+
+/* line 17, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/components/_buttons.sass */
+.btn_secondary:hover {
+  filter: brightness(120%);
+}
+
+/* line 1, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/layout/_header.sass */
+.header__logo {
+  width: 21.8rem;
+}
+
+/* line 1, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/layout/_navigation.sass */
+.nav-menu {
+  transition: .4s all;
+}
+
+/* line 3, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/layout/_navigation.sass */
+.nav-menu__list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4rem;
+}
+
+/* line 8, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/layout/_navigation.sass */
+.nav-menu__link {
+  display: inline-block;
+  text-decoration: none;
+  color: #6D7D8B;
+}
+
+/* line 12, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/layout/_navigation.sass */
+.nav-menu__link:hover {
+  color: #C55E6F;
+  transform: translateY(-0.1rem) scale(1.03);
+}
+
+/* line 1, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/pages/_home.sass */
+.hero-section {
+  padding: 1rem 0rem 9rem 0rem;
+  background-color: #FFFFFF;
+  height: 100vh;
+}
+
+/* line 5, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/pages/_home.sass */
+.hero-section__nav-container {
+  height: 10rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* line 11, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/pages/_home.sass */
+.hero-section__content-container {
+  display: flex;
+  gap: 7rem;
+  align-items: center;
+}
+
+/* line 16, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/pages/_home.sass */
+.left-wrapper {
+  max-width: 50rem;
+}
+
+/* line 20, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/pages/_home.sass */
+.right-wrapper__image {
+  max-width: 60rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
