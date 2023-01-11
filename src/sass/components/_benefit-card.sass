@@ -1,0 +1,24 @@
+.benefit-card
+    max-width: 33rem
+    @include respond(tab-land)
+        max-width: 31rem
+        margin-bottom: 6rem
+    @include respond(tab-port)
+        max-width: 50rem
+    &__icon
+        margin-bottom: 3rem
+        @include respond(tab-land)
+            margin-bottom: 2rem
+
+    &__title
+        margin-bottom: 1.5rem
+        @include respond(tab-land)
+            font-size: 2.5rem
+        &:hover
+            color: $bordeaux
+            cursor: default
+    &__text
+        @include respond(tab-land)
+            font-size: 1.8rem
+        @include respond(phone)
+            font-size: 1.6rem

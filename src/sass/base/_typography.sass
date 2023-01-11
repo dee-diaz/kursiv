@@ -12,5 +12,36 @@ body
         font-weight: 800
         line-height: 6rem
         margin-bottom: 1.5rem
+        @include respond(tab-land)
+            font-size: 4.3rem
     &__text
-        margin-bottom: 4rem
+        margin-bottom: 3rem
+
+.h3-heading
+    font-size: $font-size-h3
+    text-transform: uppercase
+    font-weight: 300
+    line-height: 2.5rem
+    letter-spacing: .7rem
+    @include respond(phone)
+        font-size: 1.8rem
+    &_red
+        color: $bordeaux
+        @include respond(tab-land)
+            text-align: center
+
+.h2-heading
+    font-size: $font-size-h2
+    text-transform: uppercase
+    font-weight: 700
+    line-height: 5rem
+    @include respond(phone)
+        font-size: 3.3rem
+    &_black
+        color: $black
+        @include respond(tab-land)
+            text-align: center
+
+.h4-heading
+    font-size: $font-size-h4
+    color: $black

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,600;0,700;0,800;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700;800&display=swap");
 /* line 1, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/base/_reset.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -444,10 +444,52 @@ html {
   font-size: 62.5%;
 }
 
-/* line 10, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/base/_base.sass */
+/* line 8, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/base/_base.sass */
 .container {
   max-width: 116rem;
   margin: 0 auto;
+}
+
+@media only screen and (max-width: 1199px) {
+  /* line 8, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/base/_base.sass */
+  .container {
+    max-width: 96rem;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  /* line 8, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/base/_base.sass */
+  .container {
+    max-width: 72rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 8, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/base/_base.sass */
+  .container {
+    max-width: 54rem;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  /* line 8, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/base/_base.sass */
+  .container {
+    max-width: 90%;
+  }
+}
+
+/* line 20, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/base/_base.sass */
+.three-clmns-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 991px) {
+  /* line 20, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/base/_base.sass */
+  .three-clmns-container {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 /* line 1, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/base/_typography.sass */
@@ -468,9 +510,77 @@ body {
   margin-bottom: 1.5rem;
 }
 
-/* line 15, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/base/_typography.sass */
+@media only screen and (max-width: 1199px) {
+  /* line 9, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/base/_typography.sass */
+  .left-wrapper__title {
+    font-size: 4.3rem;
+  }
+}
+
+/* line 17, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/base/_typography.sass */
 .left-wrapper__text {
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
+}
+
+/* line 20, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/base/_typography.sass */
+.h3-heading {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  line-height: 2.5rem;
+  letter-spacing: .7rem;
+}
+
+@media only screen and (max-width: 575px) {
+  /* line 20, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/base/_typography.sass */
+  .h3-heading {
+    font-size: 1.8rem;
+  }
+}
+
+/* line 28, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/base/_typography.sass */
+.h3-heading_red {
+  color: #C55E6F;
+}
+
+@media only screen and (max-width: 1199px) {
+  /* line 28, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/base/_typography.sass */
+  .h3-heading_red {
+    text-align: center;
+  }
+}
+
+/* line 33, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/base/_typography.sass */
+.h2-heading {
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 5rem;
+}
+
+@media only screen and (max-width: 575px) {
+  /* line 33, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/base/_typography.sass */
+  .h2-heading {
+    font-size: 3.3rem;
+  }
+}
+
+/* line 40, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/base/_typography.sass */
+.h2-heading_black {
+  color: #4A4A49;
+}
+
+@media only screen and (max-width: 1199px) {
+  /* line 40, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/base/_typography.sass */
+  .h2-heading_black {
+    text-align: center;
+  }
+}
+
+/* line 45, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/base/_typography.sass */
+.h4-heading {
+  font-size: 2.2rem;
+  color: #4A4A49;
 }
 
 /* line 1, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/base/_utilities.sass */
@@ -488,19 +598,45 @@ body {
   margin-bottom: 3rem;
 }
 
-/* line 10, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/base/_utilities.sass */
+@media only screen and (max-width: 575px) {
+  /* line 7, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/base/_utilities.sass */
+  .margin-bottom-30px {
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* line 12, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/base/_utilities.sass */
 .margin-bottom-40px {
   margin-bottom: 4rem;
 }
 
-/* line 13, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/base/_utilities.sass */
+/* line 15, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/base/_utilities.sass */
 .margin-bottom-60px {
   margin-bottom: 6rem;
 }
 
-/* line 16, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/base/_utilities.sass */
+@media only screen and (max-width: 575px) {
+  /* line 15, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/base/_utilities.sass */
+  .margin-bottom-60px {
+    margin-bottom: 4rem;
+  }
+}
+
+/* line 20, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/base/_utilities.sass */
 .margin-bottom-80px {
   margin-bottom: 8rem;
+}
+
+@media only screen and (max-width: 991px) {
+  /* line 20, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/base/_utilities.sass */
+  .margin-bottom-80px {
+    margin-bottom: 5rem;
+  }
+}
+
+/* line 25, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/base/_utilities.sass */
+.margin-bottom-100px {
+  margin-bottom: 10rem;
 }
 
 /* line 1, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/components/_buttons.sass */
@@ -509,7 +645,7 @@ body {
   color: #FFFFFF;
   background-color: #C55E6F;
   text-decoration: none;
-  border-radius: .4rem;
+  border-radius: .6rem;
   transition: .3s all;
   display: inline-block;
 }
@@ -533,17 +669,415 @@ body {
   filter: brightness(120%);
 }
 
+/* line 1, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/components/_service-card.sass */
+.service-card {
+  width: 36.6rem;
+  height: 40rem;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.25);
+  color: #FFFFFF;
+  padding-top: 4rem;
+}
+
+@media only screen and (max-width: 1199px) {
+  /* line 1, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/components/_service-card.sass */
+  .service-card {
+    width: 30rem;
+    padding-top: 6rem;
+    margin-bottom: 3rem;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  /* line 1, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/components/_service-card.sass */
+  .service-card {
+    width: 60rem;
+    height: 30rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 1, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/components/_service-card.sass */
+  .service-card {
+    width: 48rem;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  /* line 1, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/components/_service-card.sass */
+  .service-card {
+    width: 32rem;
+  }
+}
+
+/* line 18, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/components/_service-card.sass */
+.service-card_1 {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/polygraphy.jpg") center/cover no-repeat;
+}
+
+/* line 20, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/components/_service-card.sass */
+.service-card_2 {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/light-box.jpg") center/cover no-repeat;
+}
+
+/* line 22, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/components/_service-card.sass */
+.service-card_3 {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/souvenirs.jpg") center/cover no-repeat;
+}
+
+/* line 24, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/components/_service-card.sass */
+.service-card__title {
+  text-align: center;
+  letter-spacing: 0;
+  font-size: 2.4rem;
+}
+
+@media only screen and (max-width: 991px) {
+  /* line 24, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/components/_service-card.sass */
+  .service-card__title {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  /* line 24, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/components/_service-card.sass */
+  .service-card__title {
+    font-size: 2.4rem;
+  }
+}
+
+/* line 1, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/components/_benefit-card.sass */
+.benefit-card {
+  max-width: 33rem;
+}
+
+@media only screen and (max-width: 1199px) {
+  /* line 1, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/components/_benefit-card.sass */
+  .benefit-card {
+    max-width: 31rem;
+    margin-bottom: 6rem;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  /* line 1, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/components/_benefit-card.sass */
+  .benefit-card {
+    max-width: 50rem;
+  }
+}
+
+/* line 8, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/components/_benefit-card.sass */
+.benefit-card__icon {
+  margin-bottom: 3rem;
+}
+
+@media only screen and (max-width: 1199px) {
+  /* line 8, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/components/_benefit-card.sass */
+  .benefit-card__icon {
+    margin-bottom: 2rem;
+  }
+}
+
+/* line 13, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/components/_benefit-card.sass */
+.benefit-card__title {
+  margin-bottom: 1.5rem;
+}
+
+@media only screen and (max-width: 1199px) {
+  /* line 13, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/components/_benefit-card.sass */
+  .benefit-card__title {
+    font-size: 2.5rem;
+  }
+}
+
+/* line 17, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/components/_benefit-card.sass */
+.benefit-card__title:hover {
+  color: #C55E6F;
+  cursor: default;
+}
+
+@media only screen and (max-width: 1199px) {
+  /* line 20, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/components/_benefit-card.sass */
+  .benefit-card__text {
+    font-size: 1.8rem;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  /* line 20, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/components/_benefit-card.sass */
+  .benefit-card__text {
+    font-size: 1.6rem;
+  }
+}
+
+/* line 1, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/components/_contact-info.sass */
+.contact-info {
+  padding-left: 4.5rem;
+  color: #FFFFFF;
+  background-color: #C55E6F;
+  width: 37rem;
+  height: 40rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+@media only screen and (max-width: 991px) {
+  /* line 1, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/components/_contact-info.sass */
+  .contact-info {
+    flex-direction: row;
+    width: 60rem;
+    height: 18rem;
+    margin-bottom: 3rem;
+    margin-top: -2rem;
+    padding: 4rem 2rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 1, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/components/_contact-info.sass */
+  .contact-info {
+    width: 50rem;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  /* line 1, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/components/_contact-info.sass */
+  .contact-info {
+    width: 30rem;
+    height: 35rem;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  /* line 23, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/components/_contact-info.sass */
+  .contact-info__unit {
+    width: 17rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* line 27, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/components/_contact-info.sass */
+.contact-info__title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+@media only screen and (max-width: 991px) {
+  /* line 27, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/components/_contact-info.sass */
+  .contact-info__title {
+    font-size: 1.8rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 27, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/components/_contact-info.sass */
+  .contact-info__title {
+    font-size: 1.6rem;
+    margin-bottom: 1.2rem;
+  }
+}
+
+/* line 36, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/components/_contact-info.sass */
+.contact-info__title::before {
+  content: "";
+  display: inline-block;
+  width: 4rem;
+  height: 4rem;
+  margin-right: 1.5rem;
+}
+
+@media only screen and (max-width: 991px) {
+  /* line 36, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/components/_contact-info.sass */
+  .contact-info__title::before {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+/* line 45, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/components/_contact-info.sass */
+.contact-info__title_1::before {
+  background: url("../icons/address.svg") center/cover no-repeat;
+}
+
+/* line 47, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/components/_contact-info.sass */
+.contact-info__title_2::before {
+  background: url("../icons/envelope.svg") center/cover no-repeat;
+}
+
+/* line 49, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/components/_contact-info.sass */
+.contact-info__title_3::before {
+  background: url("../icons/phone.svg") center/cover no-repeat;
+}
+
+/* line 51, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/components/_contact-info.sass */
+.contact-info__text {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+@media only screen and (max-width: 991px) {
+  /* line 51, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/components/_contact-info.sass */
+  .contact-info__text {
+    font-size: 1.6rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 51, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/components/_contact-info.sass */
+  .contact-info__text {
+    font-size: 1.4rem;
+  }
+}
+
+/* line 59, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/components/_contact-info.sass */
+.contact-info__email {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 1.8rem;
+}
+
+@media only screen and (max-width: 991px) {
+  /* line 59, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/components/_contact-info.sass */
+  .contact-info__email {
+    font-size: 1.6rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 59, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/components/_contact-info.sass */
+  .contact-info__email {
+    font-size: 1.4rem;
+  }
+}
+
+/* line 67, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/components/_contact-info.sass */
+.contact-info__email:hover {
+  filter: brightness(90%);
+}
+
 /* line 1, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/layout/_header.sass */
 .header__logo {
   width: 21.8rem;
 }
 
-/* line 1, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/layout/_navigation.sass */
-.nav-menu {
-  transition: .4s all;
+@media only screen and (max-width: 991px) {
+  /* line 1, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/layout/_header.sass */
+  .header__logo {
+    width: 18rem;
+  }
 }
 
-/* line 3, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/layout/_navigation.sass */
+/* line 1, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/layout/_footer.sass */
+.footer {
+  background-color: #FFFFFF;
+  padding: 9rem 0rem 3rem 0rem;
+}
+
+@media only screen and (max-width: 1199px) {
+  /* line 1, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/layout/_footer.sass */
+  .footer {
+    padding: 5rem 0rem 3rem 0rem;
+  }
+}
+
+/* line 6, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/layout/_footer.sass */
+.footer__logo {
+  width: 21.8rem;
+}
+
+@media only screen and (max-width: 991px) {
+  /* line 6, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/layout/_footer.sass */
+  .footer__logo {
+    width: 18rem;
+  }
+}
+
+/* line 10, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/layout/_footer.sass */
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5rem;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 10, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/layout/_footer.sass */
+  .footer__container {
+    margin-bottom: 2rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 16, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/layout/_footer.sass */
+  .footer__logo-container {
+    margin: 0 auto;
+  }
+}
+
+/* line 19, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/layout/_footer.sass */
+.footer__nav {
+  display: flex;
+  align-items: center;
+}
+
+/* line 22, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/layout/_footer.sass */
+.footer__credentials-container {
+  text-align: center;
+}
+
+/* line 24, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/layout/_footer.sass */
+.footer__credentials {
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+
+/* line 27, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/layout/_footer.sass */
+.footer__privacy-policy {
+  text-align: center;
+  text-decoration: none;
+  color: #6D7D8B;
+}
+
+@media only screen and (max-width: 991px) {
+  /* line 27, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/layout/_footer.sass */
+  .footer__privacy-policy {
+    font-size: 1.6rem;
+  }
+}
+
+/* line 33, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/layout/_footer.sass */
+.footer__privacy-policy:hover {
+  color: #C55E6F;
+}
+
+/* line 1, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/layout/_navigation.sass */
+.nav-menu {
+  transition: 1s all;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 1, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/layout/_navigation.sass */
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 50%;
+    background: #C55E6F;
+    z-index: 20;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 12, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/layout/_navigation.sass */
+  .nav-menu_active {
+    right: 0;
+  }
+}
+
+/* line 16, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/layout/_navigation.sass */
 .nav-menu__list {
   display: flex;
   flex-direction: row;
@@ -551,27 +1085,123 @@ body {
   gap: 4rem;
 }
 
-/* line 8, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/layout/_navigation.sass */
+@media only screen and (max-width: 991px) {
+  /* line 16, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/layout/_navigation.sass */
+  .nav-menu__list {
+    gap: 2.3rem;
+    font-size: 1.6rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 16, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/layout/_navigation.sass */
+  .nav-menu__list {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+  }
+}
+
+/* line 29, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/layout/_navigation.sass */
 .nav-menu__link {
   display: inline-block;
   text-decoration: none;
   color: #6D7D8B;
 }
 
-/* line 12, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/layout/_navigation.sass */
+/* line 33, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/layout/_navigation.sass */
 .nav-menu__link:hover {
   color: #C55E6F;
   transform: translateY(-0.1rem) scale(1.03);
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 29, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/layout/_navigation.sass */
+  .nav-menu__link {
+    font-size: 2rem;
+    color: #FFFFFF;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 39, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/layout/_navigation.sass */
+  .nav-menu__btn {
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+    color: #FFFFFF;
+    background-color: transparent;
+    border: 2px solid #FFFFFF;
+  }
+  /* line 46, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/layout/_navigation.sass */
+  .nav-menu__btn:hover {
+    filter: brightness(120%);
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 49, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/layout/_navigation.sass */
+  .hamburger {
+    width: 3rem;
+    position: fixed;
+    top: 5rem;
+    right: 3rem;
+    height: 1.4rem;
+    z-index: 30;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 57, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/layout/_navigation.sass */
+  .hamburger span {
+    height: 2px;
+    width: 100%;
+    display: block;
+    background: #4A4A49;
+    margin-bottom: 4px;
+    transition: 1s all;
+  }
+  /* line 65, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/layout/_navigation.sass */
+  .hamburger span:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 70, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/layout/_navigation.sass */
+  .hamburger_active span:nth-child(1) {
+    transform: translateY(6px) rotate(-45deg);
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 73, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/layout/_navigation.sass */
+  .hamburger_active span:nth-child(2) {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 76, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/layout/_navigation.sass */
+  .hamburger_active span:nth-child(3) {
+    transform: rotate(45deg);
+  }
 }
 
 /* line 1, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/pages/_home.sass */
 .hero-section {
   padding: 1rem 0rem 9rem 0rem;
   background-color: #FFFFFF;
-  height: 100vh;
 }
 
-/* line 5, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/pages/_home.sass */
+@media only screen and (max-width: 991px) {
+  /* line 1, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/pages/_home.sass */
+  .hero-section {
+    padding: 1rem 0rem 5rem 0rem;
+  }
+}
+
+/* line 6, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/pages/_home.sass */
 .hero-section__nav-container {
   height: 10rem;
   display: flex;
@@ -580,21 +1210,303 @@ body {
   justify-content: space-between;
 }
 
-/* line 11, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/pages/_home.sass */
+/* line 12, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/pages/_home.sass */
 .hero-section__content-container {
   display: flex;
-  gap: 7rem;
   align-items: center;
+  justify-content: space-between;
 }
 
-/* line 16, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/pages/_home.sass */
+@media only screen and (max-width: 991px) {
+  /* line 12, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/pages/_home.sass */
+  .hero-section__content-container {
+    flex-direction: column-reverse;
+  }
+}
+
+/* line 18, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/pages/_home.sass */
 .left-wrapper {
   max-width: 50rem;
 }
 
-/* line 20, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/pages/_home.sass */
+@media only screen and (max-width: 1199px) {
+  /* line 18, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/pages/_home.sass */
+  .left-wrapper {
+    max-width: 40rem;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  /* line 18, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/pages/_home.sass */
+  .left-wrapper {
+    text-align: center;
+    max-width: 55rem;
+  }
+}
+
+/* line 25, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/pages/_home.sass */
+.left-wrapper__title {
+  line-height: 4rem;
+  margin-top: 0;
+}
+
+@media only screen and (max-width: 991px) {
+  /* line 25, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/pages/_home.sass */
+  .left-wrapper__title {
+    margin-bottom: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  /* line 25, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/pages/_home.sass */
+  .left-wrapper__title {
+    font-size: 3.4rem;
+  }
+}
+
+/* line 33, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/pages/_home.sass */
 .right-wrapper__image {
   max-width: 60rem;
+  height: auto;
+}
+
+@media only screen and (max-width: 1199px) {
+  /* line 33, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/pages/_home.sass */
+  .right-wrapper__image {
+    max-width: 50rem;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  /* line 33, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/pages/_home.sass */
+  .right-wrapper__image {
+    max-width: 35rem;
+    margin-top: -3rem;
+  }
+}
+
+/* line 42, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/pages/_home.sass */
+.second-section {
+  padding: 9rem 0rem;
+  background-color: #C55E6F;
+  color: #FFFFFF;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 42, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/pages/_home.sass */
+  .second-section {
+    padding: 6rem 0rem;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  /* line 42, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/pages/_home.sass */
+  .second-section {
+    padding: 3rem 0rem;
+  }
+}
+
+/* line 51, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/pages/_home.sass */
+.second-section__container {
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 51, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/pages/_home.sass */
+  .second-section__container {
+    text-align: center;
+  }
+}
+
+/* line 56, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/pages/_home.sass */
+.second-section__left-wrapper {
+  width: 70%;
+  margin-right: 16rem;
+}
+
+@media only screen and (max-width: 991px) {
+  /* line 56, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/pages/_home.sass */
+  .second-section__left-wrapper {
+    margin-right: 8rem;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 56, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/pages/_home.sass */
+  .second-section__left-wrapper {
+    margin-right: 0;
+  }
+}
+
+/* line 64, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/pages/_home.sass */
+.second-section__text-box {
+  max-width: 56.5rem;
+}
+
+@media only screen and (max-width: 991px) {
+  /* line 64, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/pages/_home.sass */
+  .second-section__text-box {
+    width: 35rem;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  /* line 64, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/pages/_home.sass */
+  .second-section__text-box {
+    width: 30rem;
+  }
+}
+
+/* line 71, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/pages/_home.sass */
+.second-section__text {
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 575px) {
+  /* line 71, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/pages/_home.sass */
+  .second-section__text {
+    font-size: 1.6rem;
+  }
+}
+
+/* line 75, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/pages/_home.sass */
+.second-section__right-wrapper {
+  width: 60rem;
+  position: relative;
+}
+
+@media only screen and (max-width: 991px) {
+  /* line 75, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/pages/_home.sass */
+  .second-section__right-wrapper {
+    width: 50rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 75, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/pages/_home.sass */
+  .second-section__right-wrapper {
+    display: none;
+  }
+}
+
+/* line 83, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/pages/_home.sass */
+.second-section__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 120%;
+}
+
+/* line 89, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/pages/_home.sass */
+.third-section {
+  padding: 8rem 0rem 9rem 0rem;
+}
+
+@media only screen and (max-width: 991px) {
+  /* line 89, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/pages/_home.sass */
+  .third-section {
+    padding: 6rem 0rem;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  /* line 89, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/pages/_home.sass */
+  .third-section {
+    padding: 3rem 0rem;
+  }
+}
+
+/* line 96, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/pages/_home.sass */
+.fourth-section {
+  padding: 6rem 0rem;
+  background-color: #F5F7FB;
+}
+
+@media only screen and (max-width: 1199px) {
+  /* line 96, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/pages/_home.sass */
+  .fourth-section {
+    padding: 6rem 0rem 0rem 0rem;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  /* line 96, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/pages/_home.sass */
+  .fourth-section {
+    padding: 4rem 0rem;
+  }
+}
+
+/* line 104, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/pages/_home.sass */
+.fifth-section {
+  background-color: #F5F7FB;
+  padding: 6rem 0rem 8rem 0rem;
+}
+
+@media only screen and (max-width: 1199px) {
+  /* line 104, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/pages/_home.sass */
+  .fifth-section {
+    padding: 2rem 0rem 8rem 0rem;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  /* line 104, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/pages/_home.sass */
+  .fifth-section {
+    padding: 1rem 0rem 4rem 0rem;
+  }
+}
+
+/* line 111, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/pages/_home.sass */
+.fifth-section__contacts-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 991px) {
+  /* line 111, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/pages/_home.sass */
+  .fifth-section__contacts-box {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+
+/* line 117, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/pages/_home.sass */
+.fifth-section__map {
+  width: 750px;
+  height: 400px;
+}
+
+@media only screen and (max-width: 1199px) {
+  /* line 117, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/pages/_home.sass */
+  .fifth-section__map {
+    width: 550px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  /* line 117, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/pages/_home.sass */
+  .fifth-section__map {
+    width: 600px;
+    height: 300px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 117, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/pages/_home.sass */
+  .fifth-section__map {
+    width: 50rem;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  /* line 117, ../../../../../Users/dianadiaz/repos/kursiv/src/sass/pages/_home.sass */
+  .fifth-section__map {
+    width: 30rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

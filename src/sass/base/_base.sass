@@ -5,8 +5,21 @@ html
     scroll-behavior: smooth
     font-size: 62.5%
 
-// body
-
 .container
     max-width: 116rem
     margin: 0 auto
+    @include respond(tab-land)
+        max-width: 96rem
+    @include respond(tab-port)
+        max-width: 72rem
+    @include respond(phone-land)
+        max-width: 54rem
+    @include respond(phone)
+        max-width: 90%
+
+.three-clmns-container
+    display: flex
+    justify-content: space-between
+    @include respond(tab-port)
+        flex-direction: column
+        align-items: center

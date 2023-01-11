@@ -1,0 +1,31 @@
+.service-card
+    width: 36.6rem
+    height: 40rem
+    box-shadow: $box-shadow
+    color: $white
+    padding-top: 4rem
+    @include respond(tab-land)
+        width: 30rem
+        padding-top: 6rem
+        margin-bottom: 3rem
+    @include respond(tab-port)
+        width: 60rem
+        height: 30rem
+    @include respond(phone-land)
+        width: 48rem
+    @include respond(phone)
+        width: 32rem
+    &_1
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/polygraphy.jpg") center / cover no-repeat 
+    &_2
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/light-box.jpg") center / cover no-repeat
+    &_3
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/souvenirs.jpg") center / cover no-repeat
+    &__title
+        text-align: center
+        letter-spacing: 0
+        font-size: 2.4rem
+        @include respond(tab-port)
+            font-size: 3rem
+        @include respond(phone)
+            font-size: 2.4rem

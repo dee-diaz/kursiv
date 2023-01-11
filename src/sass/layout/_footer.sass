@@ -1,0 +1,34 @@
+.footer
+    background-color: $white
+    padding: 9rem 0rem 3rem 0rem
+    @include respond(tab-land)
+        padding: 5rem 0rem 3rem 0rem
+    &__logo
+        width: 21.8rem
+        @include respond(tab-port)
+            width: 18rem
+    &__container
+        display: flex
+        justify-content: space-between
+        margin-bottom: 5rem
+        @include respond(phone-land)
+            margin-bottom: 2rem
+    &__logo-container
+            @include respond(phone-land)
+                margin: 0 auto
+    &__nav
+        display: flex
+        align-items: center
+    &__credentials-container
+        text-align: center
+    &__credentials
+        font-weight: 400
+        font-size: 1.6rem
+    &__privacy-policy
+        text-align: center
+        text-decoration: none
+        color: $grey
+        @include respond(tab-port)
+            font-size: 1.6rem
+        &:hover
+            color: $bordeaux
