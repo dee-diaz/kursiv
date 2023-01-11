@@ -17,13 +17,16 @@
     @include respond(phone-land)
         width: 50rem
     @include respond(phone)
-        width: 30rem
+        width: 34rem
         height: 35rem
         flex-direction: column
     &__unit
         @include respond(tab-port)
             width: 17rem
             margin-bottom: 1.5rem
+        @include respond(tab-port)
+            width: 30rem
+            margin-bottom: 2.5rem
     &__title
         display: flex
         align-items: center
@@ -33,6 +36,8 @@
         @include respond(phone-land)
             font-size: 1.6rem
             margin-bottom: 1.2rem
+        @include respond(phone)
+            font-size: 2rem
         &::before
             content: ""
             display: inline-block
@@ -56,13 +61,18 @@
             font-size: 1.6rem
         @include respond(phone-land)
             font-size: 1.4rem
-    &__email
+        @include respond(phone)
+            font-size: 1.7rem
+    &__contact
         text-decoration: none
         color: $white
         font-size: 1.8rem
+        font-weight: 400
         @include respond(tab-port)
             font-size: 1.6rem
         @include respond(phone-land)
             font-size: 1.4rem
+        @include respond(phone)
+            font-size: 1.8rem
         &:hover
             filter: brightness(90%)
