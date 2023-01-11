@@ -1,5 +1,9 @@
 .benefit-card
     max-width: 33rem
+    transition: .5s all
+    &:hover
+        transform: scale(1.03)
+        filter: brightness(120%)
     @include respond(tab-land)
         max-width: 31rem
         margin-bottom: 6rem

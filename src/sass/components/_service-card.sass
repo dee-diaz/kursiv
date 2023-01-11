@@ -4,6 +4,11 @@
     box-shadow: $box-shadow
     color: $white
     padding-top: 4rem
+    transition: .5s all
+    &:hover
+        transform: translateY(-1.3rem) scale(1.03)
+        cursor: pointer
+        filter: brightness(120%)
     @include respond(tab-land)
         width: 30rem
         padding-top: 6rem
